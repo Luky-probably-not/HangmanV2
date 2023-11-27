@@ -13,7 +13,7 @@ func SelectWord(s string) []string { // function that selects a random word from
 		return []string(nil)
 	}
 	list := byteToString(content)
-	mot := list[rand.Intn(len(list)-1)]
+	mot := list[rand.Intn(len(list))]
 	run := []rune(mot)
 	str := []string{}
 	for i := 0; i < len(mot)-1; i++ {
