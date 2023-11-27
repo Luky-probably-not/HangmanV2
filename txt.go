@@ -15,6 +15,10 @@ func SelectWord(s string) string {
 	}
 	list := byteToString(content)
 	mot := list[rand.Intn(len(list)-1)]
+	run := []rune(mot)
+	str := []string{}
+	for _, i := range run {
+		str = append(str, i)
 	return mot
 
 }
