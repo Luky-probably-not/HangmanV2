@@ -7,7 +7,7 @@ import (
 )
 
 
-func SelectWord(s string) string {
+func SelectWord(s string) []string {
 	content, err := os.ReadFile(s)
 	if err != nil {
 		fmt.Println("file error")
