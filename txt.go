@@ -7,7 +7,7 @@ import (
 )
 
 
-func SelectWord(s string) []string {
+func SelectWord(s string) string {
 	content, err := os.ReadFile(s)
 	if err != nil {
 		fmt.Println("file error")
@@ -15,13 +15,7 @@ func SelectWord(s string) []string {
 	}
 	list := byteToString(content)
 	mot := list[rand.Intn(len(list)-1)]
-	run := []rune(mot)
-	str := []string{}
-	for i := 0; i < len(run)-1; i++ {
-		str = append(str, string(run(i)))
-	}
-
-	return str
+	return mot
 
 }
 
