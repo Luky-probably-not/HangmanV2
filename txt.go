@@ -14,7 +14,7 @@ func SelectWord(s string) []string {
 		return []string(nil)
 	}
 	list := byteToString(content)
-	mot := list[rand.Intn(len(list))]
+	mot := list[rand.Intn(len(list)-1)]
 	run := []rune(mot)
 	str := []string{}
 	for _, i := range run {
