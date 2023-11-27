@@ -18,7 +18,7 @@ func SelectWord(s string) []string {
 	run := []rune(mot)
 	str := []string{}
 	for _, i := range run {
-		str = append(str, i)
+		str = append(str, string(i))
 	return str
 
 }
