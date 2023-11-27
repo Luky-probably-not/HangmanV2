@@ -11,7 +11,7 @@ func SelectWord(s string) []string {
 	content, err := os.ReadFile(s)
 	if err != nil {
 		fmt.Println("file error")
-		return []string(nil)
+		return []string{}
 	}
 	list := byteToString(content)
 	mot := list[rand.Intn(len(list)-1)]
