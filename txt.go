@@ -33,5 +33,6 @@ func byteToString(b []byte) []string {//function that converts the content of a 
 			word += string(i)
 		}
 	}
+	result = append(result,word)
 	return result
 }
