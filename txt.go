@@ -19,8 +19,8 @@ func SelectWord(s string) []string {
 	str := []string{}
 	for _, i := range run {
 		str = append(str, string(i))
+	}
 	return str
-
 }
 
 func byteToString(b []byte) []string {
